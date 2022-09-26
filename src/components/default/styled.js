@@ -59,8 +59,8 @@ export const MainWrap = styled(Col)`
     text-align: center;
   }
   & .selectBox {
-    width: 200px;
-    height: 52px;
+    width: 23rem;
+    height: 5.2rem;
     background: #4a4a4a;
     border-radius: 8px;
     font-weight: 900;

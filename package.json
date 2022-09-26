@@ -2,18 +2,12 @@
   "name": "umc-necklace",
   "description": "umc-참가-목걸이",
   "version": "1.0.0",
-  "homepage": ".",
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:softsquared/tech-department/outsource/template-outsource/web-react-js.git"
-  },
-  "license": "Only use for softsquared project",
-  "author": "(주)소프트스퀘어드",
   "scripts": {
     "build-dev": "BUILD_PATH='./build-dev' dotenv -e .env.development react-scripts build",
     "build-stage": "BUILD_PATH='./build-stage' dotenv -e .env.stage react-scripts build",
     "build-prod": "react-scripts build",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -32,11 +26,13 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-scripts": "5.0.0",
     "redux-devtools-extension": "^2.13.9"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
-  }
+  },
+  "homepage": "https://Kid-Chang.github.io/umc_hackathon_participating_necklace"
 }

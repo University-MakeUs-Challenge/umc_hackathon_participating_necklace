@@ -29,7 +29,13 @@ const HomePage = () => {
             <br />
             UMC에 오신 걸 환영합니다
           </div>
-          <div onClick={goMakeNecklace}>목걸이 만들러가기</div>
+          <div
+            className='boxDefault'
+            style={{ color: '#31FF6F' }}
+            onClick={goMakeNecklace}
+          >
+            목걸이 만들러가기
+          </div>
         </MainWrap>
       </Row>
     </Container>

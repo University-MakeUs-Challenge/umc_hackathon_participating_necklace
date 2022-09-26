@@ -40,7 +40,7 @@ const YourNecklace = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignContent: 'center',
-        height: '60vh',
+        minHeight: '90vh',
         position: 'relative',
       }}
     >
