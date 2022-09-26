@@ -10,7 +10,7 @@ font-size: 62.5%; // 1rem = 10px 로 변경 한 것, 바꾼 이유는 사파리�
 }
 body {
   user-select: none;
-  background: white;
+  background: black;
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', -apple-system, sans-serif, Roboto;
@@ -36,7 +36,8 @@ export const MainWrap = styled(Col)`
     color: white;
   }
   & .nextButton {
-    width: 11.4rem;
+    /* width: 11.4rem; */
+    padding: 0 2rem 0 2rem;
     height: 5.8rem;
     background: #4a4a4a;
     border-radius: 5rem;

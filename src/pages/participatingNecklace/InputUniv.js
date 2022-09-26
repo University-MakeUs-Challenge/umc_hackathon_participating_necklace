@@ -7,7 +7,7 @@ import { useRecoilState } from 'recoil';
 import { univ } from '../../atom/atom';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage = () => {
+const InputUniv = () => {
   const [userUniv, setUserUniv] = useRecoilState(univ);
   const navigate = useNavigate();
   const goNext = () => {
@@ -54,4 +54,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default InputUniv;

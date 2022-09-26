@@ -3,8 +3,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { MainWrap } from '../../components/default/styled';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const goMakeNecklace = () => {
+    navigate('/necklace');
+  };
+
   return (
     <Container>
       <Row
@@ -23,6 +29,7 @@ const HomePage = () => {
             <br />
             UMC에 오신 걸 환영합니다
           </div>
+          <div onClick={goMakeNecklace}>목걸이 만들러가기</div>
         </MainWrap>
       </Row>
     </Container>

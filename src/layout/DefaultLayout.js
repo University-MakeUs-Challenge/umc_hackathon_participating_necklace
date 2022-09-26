@@ -21,7 +21,7 @@ const DefaultLayout = () => {
 export default DefaultLayout;
 
 const IndexStyle = styled.div`
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  height: 88vh;
   background-color: black;
 `;

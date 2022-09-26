@@ -7,12 +7,12 @@ import { useRecoilState } from 'recoil';
 import { part } from '../../atom/atom';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage = () => {
+const InputPart = () => {
   const [userPart, setUserPart] = useRecoilState(part);
   const navigate = useNavigate();
   const goNext = () => {
     if (userPart !== '') {
-      navigate('/necklace/inputuniv');
+      navigate('/necklace/yournecklace');
     }
   };
   return (
@@ -37,14 +37,15 @@ const HomePage = () => {
               setUserPart(e.target.value);
             }}
           >
-            <option>Node.JS</option>
-            <option>Spring</option>
-            <option>Android</option>
+            <option>Node.JS Developer</option>
+            <option>Spring Developer</option>
+            <option>Android Developer</option>
+            <option>iOS Developer</option>
             <option>Designer</option>
             <option>Planner</option>
           </select>
           <div className='nextButton'>
-            <span onClick={goNext}>다음으로</span>
+            <span onClick={goNext}>참가 목걸이 만들기</span>
           </div>
         </MainWrap>
       </Row>
@@ -52,4 +53,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default InputPart;
