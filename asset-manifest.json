@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/umc_hackathon_participating_necklace/static/css/main.64e535d0.css",
+    "main.js": "/umc_hackathon_participating_necklace/static/js/main.b227228d.js",
+    "static/js/20.da5ae1cd.chunk.js": "/umc_hackathon_participating_necklace/static/js/20.da5ae1cd.chunk.js",
+    "static/js/998.b4838df8.chunk.js": "/umc_hackathon_participating_necklace/static/js/998.b4838df8.chunk.js",
+    "static/js/106.a6b2cf78.chunk.js": "/umc_hackathon_participating_necklace/static/js/106.a6b2cf78.chunk.js",
+    "static/js/719.73819622.chunk.js": "/umc_hackathon_participating_necklace/static/js/719.73819622.chunk.js",
+    "static/js/542.2ff72906.chunk.js": "/umc_hackathon_participating_necklace/static/js/542.2ff72906.chunk.js",
+    "static/js/686.2cd3a271.chunk.js": "/umc_hackathon_participating_necklace/static/js/686.2cd3a271.chunk.js",
+    "static/js/329.8e051cfd.chunk.js": "/umc_hackathon_participating_necklace/static/js/329.8e051cfd.chunk.js",
+    "static/js/472.00c9679c.chunk.js": "/umc_hackathon_participating_necklace/static/js/472.00c9679c.chunk.js",
+    "static/js/501.f3b563bf.chunk.js": "/umc_hackathon_participating_necklace/static/js/501.f3b563bf.chunk.js",
+    "static/js/498.a3c726b6.chunk.js": "/umc_hackathon_participating_necklace/static/js/498.a3c726b6.chunk.js",
+    "static/media/cardBackground.png": "/umc_hackathon_participating_necklace/static/media/cardBackground.c12e5d83abd23b81e3a1.png",
+    "index.html": "/umc_hackathon_participating_necklace/index.html",
+    "main.64e535d0.css.map": "/umc_hackathon_participating_necklace/static/css/main.64e535d0.css.map",
+    "main.b227228d.js.map": "/umc_hackathon_participating_necklace/static/js/main.b227228d.js.map",
+    "20.da5ae1cd.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/20.da5ae1cd.chunk.js.map",
+    "998.b4838df8.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/998.b4838df8.chunk.js.map",
+    "106.a6b2cf78.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/106.a6b2cf78.chunk.js.map",
+    "719.73819622.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/719.73819622.chunk.js.map",
+    "542.2ff72906.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/542.2ff72906.chunk.js.map",
+    "686.2cd3a271.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/686.2cd3a271.chunk.js.map",
+    "329.8e051cfd.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/329.8e051cfd.chunk.js.map",
+    "472.00c9679c.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/472.00c9679c.chunk.js.map",
+    "501.f3b563bf.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/501.f3b563bf.chunk.js.map",
+    "498.a3c726b6.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/498.a3c726b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64e535d0.css",
+    "static/js/main.b227228d.js"
+  ]
+}
