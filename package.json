@@ -1,0 +1,41 @@
+{
+  "name": "umc-necklace",
+  "description": "umc-참가-목걸이",
+  "version": "1.0.0",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:softsquared/tech-department/outsource/template-outsource/web-react-js.git"
+  },
+  "license": "Only use for softsquared project",
+  "author": "(주)소프트스퀘어드",
+  "scripts": {
+    "build-dev": "BUILD_PATH='./build-dev' dotenv -e .env.development react-scripts build",
+    "build-stage": "BUILD_PATH='./build-stage' dotenv -e .env.stage react-scripts build",
+    "build-prod": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "dotenv-cli": "^5.1.0",
+    "react": "^17.0.2",
+    "react-app-polyfill": "^3.0.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "recoil": "^0.7.5",
+    "redux": "4.1.2",
+    "simplebar-react": "^2.4.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.0",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}
