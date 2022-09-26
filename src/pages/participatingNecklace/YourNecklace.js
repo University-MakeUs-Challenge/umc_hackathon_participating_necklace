@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import BackImg from '../../assets/cardBackground.png';
 import { name, nickname, part, univ } from '../../atom/atom';
 import { useRecoilValue } from 'recoil';
-import html2canvas from 'html2canvas';
+// import html2canvas from 'html2canvas';
+import domtoimage from 'dom-to-image';
+import { saveAs } from 'file-saver';
 
 const YourNecklace = () => {
   const yourName = useRecoilValue(name);
@@ -13,25 +15,30 @@ const YourNecklace = () => {
   const yourPart = useRecoilValue(part);
   const yourUniv = useRecoilValue(univ);
 
-  const goCapture = () => {
-    //클릭 이벤트
-    const capture = document.querySelector('#capture'); //이미지 저장 영역
-    html2canvas(capture).then((canvas) => {
-      saveAs(canvas.toDataURL('image/jpg'), '이미지.jpg');
-    });
-  };
+  // const goCapture = () => {
+  //   //클릭 이벤트
+  //   const capture = document.querySelector('#capture'); //이미지 저장 영역
+  //   html2canvas(capture).then((canvas) => {
+  //     saveAs(canvas.toDataURL('image/jpg'), '이미지.jpg');
+  //   });
+  // };
 
-  const saveAs = (uri, filename) => {
-    let link = document.createElement('a');
-    if (typeof link.download === 'string') {
-      link.href = uri;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      window.open(uri);
-    }
+  // const saveAs = (uri, filename) => {
+  //   let link = document.createElement('a');
+  //   if (typeof link.download === 'string') {
+  //     link.href = uri;
+  //     link.download = filename;
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   } else {
+  //     window.open(uri);
+  //   }
+  // };
+  const goCapture = () => {
+    domtoimage.toBlob(document.querySelector('.capture')).then((blob) => {
+      saveAs(blob, 'card.jpg');
+    });
   };
   return (
     <div
@@ -44,7 +51,7 @@ const YourNecklace = () => {
         position: 'relative',
       }}
     >
-      <CardWrap id='capture'>
+      <CardWrap className='capture'>
         <div className='nameText'>
           {yourNickname} | {yourName}
         </div>
