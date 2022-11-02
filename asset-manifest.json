@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/umc_hackathon_participating_necklace/static/css/main.64e535d0.css",
-    "main.js": "/umc_hackathon_participating_necklace/static/js/main.77ddd261.js",
-    "static/js/20.72548831.chunk.js": "/umc_hackathon_participating_necklace/static/js/20.72548831.chunk.js",
+    "main.js": "/umc_hackathon_participating_necklace/static/js/main.2c491c5a.js",
+    "static/js/20.e2ba9fb3.chunk.js": "/umc_hackathon_participating_necklace/static/js/20.e2ba9fb3.chunk.js",
     "static/js/998.61528758.chunk.js": "/umc_hackathon_participating_necklace/static/js/998.61528758.chunk.js",
     "static/js/106.02f556dd.chunk.js": "/umc_hackathon_participating_necklace/static/js/106.02f556dd.chunk.js",
     "static/js/719.014e7123.chunk.js": "/umc_hackathon_participating_necklace/static/js/719.014e7123.chunk.js",
@@ -15,8 +15,8 @@
     "static/media/cardBackground.png": "/umc_hackathon_participating_necklace/static/media/cardBackground.e6cac5cea9963e724bf4.png",
     "index.html": "/umc_hackathon_participating_necklace/index.html",
     "main.64e535d0.css.map": "/umc_hackathon_participating_necklace/static/css/main.64e535d0.css.map",
-    "main.77ddd261.js.map": "/umc_hackathon_participating_necklace/static/js/main.77ddd261.js.map",
-    "20.72548831.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/20.72548831.chunk.js.map",
+    "main.2c491c5a.js.map": "/umc_hackathon_participating_necklace/static/js/main.2c491c5a.js.map",
+    "20.e2ba9fb3.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/20.e2ba9fb3.chunk.js.map",
     "998.61528758.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/998.61528758.chunk.js.map",
     "106.02f556dd.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/106.02f556dd.chunk.js.map",
     "719.014e7123.chunk.js.map": "/umc_hackathon_participating_necklace/static/js/719.014e7123.chunk.js.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.64e535d0.css",
-    "static/js/main.77ddd261.js"
+    "static/js/main.2c491c5a.js"
   ]
 }
