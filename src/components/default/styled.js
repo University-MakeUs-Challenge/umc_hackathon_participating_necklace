@@ -10,8 +10,6 @@ font-size: 62.5%; // 1rem = 10px 로 변경 한 것, 바꾼 이유는 사파리�
 
 }
 body {
-  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-  font-family: 'Black Han Sans', sans-serif;
   user-select: none;
   background: black;
   margin: 0;
@@ -32,6 +30,8 @@ export const TextMiddle = styled.div`
 `;
 
 export const MainWrap = styled(Col)`
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
   & .boxDefault {
     margin-top: 2.8rem;
     margin-bottom: 4rem;
@@ -47,6 +47,7 @@ export const MainWrap = styled(Col)`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     & > span {
       font-weight: 900;
       font-size: 2rem;
@@ -60,6 +61,7 @@ export const MainWrap = styled(Col)`
   & .subTitle {
     font-size: 2rem;
     text-align: center;
+    color: white;
   }
   & .selectBox {
     width: 23rem;
@@ -73,6 +75,7 @@ export const MainWrap = styled(Col)`
     font-size: 2.4rem;
     font-weight: 900;
     text-align: center;
+    color: white;
   }
   display: flex;
   flex-direction: column;

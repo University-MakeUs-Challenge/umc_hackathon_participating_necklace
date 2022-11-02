@@ -37,13 +37,17 @@ const YourNecklace = () => {
         <div className='nameText'>{yourName}</div>
 
         <div className='partText'>{yourPart}</div>
-        {yourPart !== 'Planner' || yourPart !== 'Designer' ? (
+        {!(yourPart == 'Planner' || yourPart == 'Designer') ? (
           <div className='partDevText'>Developer</div>
         ) : null}
       </CardWrap>
       {/* <SaveButton>
         <span onClick={goCapture}>이미지로 저장</span>
       </SaveButton> */}
+      <br />
+      <div className='subTitle'>
+        위의 이미지를 캡쳐해서 인스타 이벤트를 참여해주세요!
+      </div>
     </MainWrap>
   );
 };
