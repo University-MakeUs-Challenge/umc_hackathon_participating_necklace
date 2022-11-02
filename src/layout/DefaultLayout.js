@@ -18,7 +18,7 @@ export default DefaultLayout;
 
 const IndexStyle = styled.div`
   /* width: 100vw; */
-  height: 100vh;
+  height: 80vh;
   background-color: black;
   /* display: flex;
   justify-content: center;
