@@ -37,6 +37,7 @@ export const MainWrap = styled(Col)`
     margin-bottom: 4rem;
     color: white;
     font-size: 1.5rem;
+    width: 15rem;
   }
   & .nextButton {
     /* width: 11.4rem; */
@@ -64,7 +65,7 @@ export const MainWrap = styled(Col)`
     color: white;
   }
   & .selectBox {
-    width: 23rem;
+    width: 15rem;
     height: 5.2rem;
     background: #4a4a4a;
     border-radius: 8px;

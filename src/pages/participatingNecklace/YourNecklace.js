@@ -46,7 +46,9 @@ const YourNecklace = () => {
       </SaveButton> */}
       <br />
       <div className='subTitle'>
-        위의 이미지를 캡쳐해서 인스타 이벤트를 참여해주세요!
+        위의 이미지를 캡쳐해서
+        <br />
+        인스타 이벤트를 참여해주세요!
       </div>
     </MainWrap>
   );
@@ -77,13 +79,13 @@ const CardWrap = styled(Col)`
 
   & .nicknameText {
     position: absolute;
-    top: 15.5rem;
+    top: 12.5rem;
     font-weight: 900;
     font-size: 6rem;
   }
   & .nameText {
     position: absolute;
-    top: 23.5rem;
+    top: 18.5rem;
     font-weight: 900;
     font-size: 6rem;
   }
@@ -102,7 +104,8 @@ const CardWrap = styled(Col)`
     font-size: 2.5rem;
   }
   position: relative;
-  width: 32rem;
+  width: 25rem;
+  /* 32rem */
   /* height: 43rem; */
   background-image: url(${BackImg});
   background-size: contain;
