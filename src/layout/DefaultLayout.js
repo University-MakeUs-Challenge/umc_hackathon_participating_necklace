@@ -20,7 +20,7 @@ const IndexStyle = styled.div`
   /* width: 100vw; */
   height: 100vh;
   background-color: black;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 `;

@@ -38,6 +38,7 @@ export const MainWrap = styled(Col)`
     color: white;
     font-size: 1.5rem;
     width: 15rem;
+    text-align: center;
   }
   & .nextButton {
     /* width: 11.4rem; */
