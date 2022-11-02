@@ -37,10 +37,10 @@ const InputPart = () => {
               setUserPart(e.target.value);
             }}
           >
-            <option>Node.JS Developer</option>
-            <option>Spring Developer</option>
-            <option>Android Developer</option>
-            <option>iOS Developer</option>
+            <option>Node.JS</option>
+            <option>Spring</option>
+            <option>Android</option>
+            <option>iOS</option>
             <option>Designer</option>
             <option>Planner</option>
           </select>

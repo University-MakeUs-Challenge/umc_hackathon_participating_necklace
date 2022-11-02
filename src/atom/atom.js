@@ -11,7 +11,7 @@ export const nickname = atom({
 });
 export const part = atom({
   key: 'part', // unique ID (with respect to other atoms/selectors)
-  default: 'Node.JS Developer', // default value (aka initial value)
+  default: 'Node.JS', // default value (aka initial value)
 });
 export const univ = atom({
   key: 'univ', // unique ID (with respect to other atoms/selectors)

@@ -5,10 +5,6 @@ import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
 const DefaultLayout = () => {
-  const navigate = useNavigate();
-
-  // Redux 값 불러오기
-
   return (
     <>
       <IndexStyle>
@@ -22,6 +18,9 @@ export default DefaultLayout;
 
 const IndexStyle = styled.div`
   /* width: 100vw; */
-  height: 88vh;
+  height: 100vh;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

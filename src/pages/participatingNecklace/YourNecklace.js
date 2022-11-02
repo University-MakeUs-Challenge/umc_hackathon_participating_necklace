@@ -1,66 +1,50 @@
-import { useSelector } from 'react-redux';
-import { Col, Container, Row } from 'react-bootstrap';
-import { useState } from 'react';
+import { Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import BackImg from '../../assets/cardBackground.png';
 import { name, nickname, part, univ } from '../../atom/atom';
 import { useRecoilValue } from 'recoil';
-// import html2canvas from 'html2canvas';
+import html2canvas from 'html2canvas';
 import domtoimage from 'dom-to-image';
 import { saveAs } from 'file-saver';
+import { MainWrap } from '../../components/default/styled';
 
 const YourNecklace = () => {
   const yourName = useRecoilValue(name);
   const yourNickname = useRecoilValue(nickname);
   const yourPart = useRecoilValue(part);
-  const yourUniv = useRecoilValue(univ);
 
   // const goCapture = () => {
-  //   //클릭 이벤트
-  //   const capture = document.querySelector('#capture'); //이미지 저장 영역
-  //   html2canvas(capture).then((canvas) => {
-  //     saveAs(canvas.toDataURL('image/jpg'), '이미지.jpg');
-  //   });
+  //   domtoimage
+  //     .toBlob(document.querySelector('.capture'))
+  //     .then((blob) => {
+  //       saveAs(blob, 'card.png');
+  //     });
   // };
 
-  // const saveAs = (uri, filename) => {
-  //   let link = document.createElement('a');
-  //   if (typeof link.download === 'string') {
-  //     link.href = uri;
-  //     link.download = filename;
-  //     document.body.appendChild(link);
-  //     link.click();
-  //     document.body.removeChild(link);
-  //   } else {
-  //     window.open(uri);
-  //   }
-  // };
-  const goCapture = () => {
-    domtoimage.toBlob(document.querySelector('.capture')).then((blob) => {
-      saveAs(blob, 'card.jpg');
-    });
-  };
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignContent: 'center',
-        minHeight: '90vh',
-        position: 'relative',
-      }}
-    >
+    <MainWrap>
+      <div className='title'>
+        Break the Rules
+        <br />
+      </div>
+      <div className='subTitle'>UMC Hackathon에 오신 걸 환영합니다</div>
+
+      <br />
+      <br />
+      <br />
       <CardWrap className='capture'>
-        <div className='nameText'>
-          {yourNickname} | {yourName}
-        </div>
+        <div className='nicknameText'>{yourNickname}</div>
+        <div className='nameText'>{yourName}</div>
+
         <div className='partText'>{yourPart}</div>
+        {yourPart !== 'Planner' || yourPart !== 'Designer' ? (
+          <div className='partDevText'>Developer</div>
+        ) : null}
       </CardWrap>
-      <SaveButton>
+      {/* <SaveButton>
         <span onClick={goCapture}>이미지로 저장</span>
-      </SaveButton>
-    </div>
+      </SaveButton> */}
+    </MainWrap>
   );
 };
 const SaveButton = styled.div`
@@ -81,22 +65,37 @@ const SaveButton = styled.div`
 `;
 
 const CardWrap = styled(Col)`
+  min-height: 50vh;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  color: black;
+
+  & .nicknameText {
+    position: absolute;
+    top: 15.5rem;
+    font-weight: 900;
+    font-size: 6rem;
+  }
   & .nameText {
     position: absolute;
-
-    top: 25.5rem;
-    font-weight: 700;
-    font-size: 22px;
+    top: 23.5rem;
+    font-weight: 900;
+    font-size: 6rem;
   }
   & .partText {
+    right: 2rem;
     position: absolute;
-    top: 29rem;
-    font-weight: 300;
-    font-size: 16px;
+    top: 2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  & .partDevText {
+    right: 2rem;
+    position: absolute;
+    top: 4.5rem;
+    font-weight: 800;
+    font-size: 2.5rem;
   }
   position: relative;
   width: 32rem;
