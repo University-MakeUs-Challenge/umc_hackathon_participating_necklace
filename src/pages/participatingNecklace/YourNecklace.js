@@ -24,6 +24,7 @@ const YourNecklace = () => {
   return (
     <MainWrap>
       <div className='title'>
+        <div style={{ marginTop: '3rem' }}></div>
         Break the Rules
         <br />
       </div>
